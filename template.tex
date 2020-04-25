@@ -1,8 +1,16 @@
+%To plik główny który powinieneś kompilować, jest on tylko
+%abyś mógł zobaczyć jak będzie wyglądał finalny dokument,
+%dlatego nie modyfikuj go - wszystko co napiszesz powinno
+%znajdować się w oddzielnym pliku który będzie podpinany tak
+%jak jest to zrobione tutaj.
 \documentclass[11pt]{book}
 
+%wszystkie paczki zdefiniowane są w pliku .sty, dodałem ich
+%dosyć sporo ale jeśli czegoś brakuje dopisz je tam, ale potem
+%daj mi znać co dopisałeś aby paczka była też w finalnym składzie
 \usepackage{preamble}
 
-\newcommand{\autor}{Lorem ipsum}
+\newcommand{\autor}{}
 \pagestyle{fancy}
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 \fancyhf{}
@@ -11,6 +19,11 @@
 \fancyfoot[C]{\thepage}
 \setlength{\headheight}{14pt}
 
+\title{Klub Wymiataczy}
+\date{}
+
 \begin{document}
+    \maketitle
+    \tableofcontents
     \subfile{templateFile.tex}
 \end{document}
