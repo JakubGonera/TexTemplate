@@ -1,0 +1,16 @@
+\documentclass[11pt]{book}
+
+\usepackage{preamble}
+
+\newcommand{\autor}{Lorem ipsum}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\fancyhf{}
+\fancyhead[LE]{\autor}
+\fancyhead[RO]{\leftmark}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14pt}
+
+\begin{document}
+    \subfile{templateFile.tex}
+\end{document}
