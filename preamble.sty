@@ -14,10 +14,13 @@
 \usepackage{fancyhdr}
 \usepackage{emptypage}
 
-\newtheorem{theorem}{Twierdzenie}[section]
+\newtheorem{theorem}{Twierdzenie}[chapter]
 
 \theoremstyle{definition}
-\newtheorem{definition}{Definicja}[section]
+\newtheorem{definition}[theorem]{Definicja}
 
 \theoremstyle{remark}
 \newtheorem*{remark}{Uwaga}
+
+\theoremstyle{definition}
+\newtheorem{problem}{Zadanie}[chapter]
