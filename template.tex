@@ -1,3 +1,4 @@
+%Autor: Jakub Gonera
 %To plik główny który powinieneś kompilować, jest on tylko
 %abyś mógł zobaczyć jak będzie wyglądał finalny dokument,
 %dlatego nie modyfikuj go - wszystko co napiszesz powinno
@@ -5,10 +6,12 @@
 %jak jest to zrobione tutaj.
 \documentclass[11pt]{book}
 
-%wszystkie paczki zdefiniowane są w pliku .sty, dodałem ich
-%dosyć sporo ale jeśli czegoś brakuje dopisz je tam, ale potem
-%daj mi znać co dopisałeś aby paczka była też w finalnym składzie
+%Wszystkie paczki zdefiniowane są w pliku .sty, dodałem ich
+%dosyć sporo ale jeśli czegoś brakuje dopisz to w pliku
+%additionalStyle.sty. Wtedy będziesz musiał przesłać twoją
+%wersję templateFile.tex oraz additionalStyle.sty.
 \usepackage{preamble}
+\usepackage{additionalStyle}
 
 \newcommand{\autor}{}
 \pagestyle{fancy}
